@@ -12,7 +12,7 @@ class Estrategia(ABC):
         pass
 
     @abstractmethod
-    def executarEstrategia(self) -> None:
+    def foreachSymbolControle(self) -> None:
         pass
 
     @abstractmethod
