@@ -3,10 +3,8 @@ from src.processos.data.controleBot import ControleBot
 from src.processos.data.services.checkInternet import check
 from src.processos.data.auth import Authenticacao
 from src.processos.data.candles import Candles
-from src.processos.color import bcolors
 from src.processos.abstract.estrategia import Estrategia
 from src.processos.data.priceatual import PriceAtual
-from src.processos.logs.log import Console
 import time
 
 # Estrategia baseada em 6 dias no Timeframe 1 hora

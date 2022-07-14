@@ -1,5 +1,4 @@
 from src.processos.data.services.api import Api
-from src.processos.color import bcolors
 
 class Authenticacao():
     def __init__(self) -> None:

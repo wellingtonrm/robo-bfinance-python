@@ -1,9 +1,8 @@
 from src.processos.data.auth import Authenticacao
 from src.processos.data.controleBot import ControleBot
-from src.processos.color import bcolors
 from src.processos.abstract.estrategia import Estrategia
 from src.processos.data.priceatual import PriceAtual
-from src.processos.logs.log import Console
+from src.processos.logs.log import Debug
 from src.processos.data.services.checkInternet import  check
 from src.processos.data.candles import Candles
 import time
@@ -32,7 +31,7 @@ class MediaMovelAritimetica(Estrategia):
     def executarRobo(self):
          while True:
             #data =  self.getpreco()
-            #Console().log(data, bcolors.WARNING)
-            time.sleep(10)
+            Debug.log('periodo 2', "BTC","23,44")
+            time.sleep(3)
 
 

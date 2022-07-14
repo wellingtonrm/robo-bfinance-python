@@ -1,19 +1,4 @@
-
-datass= {
-    'openTime': 1655269200000, 
-    'open': '3.41470000', 
-    'high': '3.43940000', 
-    'low': '3.28170000', 
-    'close': '3.37010000', 
-    'volume': '1226023.72000000', 
-    'closeTime': 1655272799999, 
-    'quoteVolume': '4112767.56106800', 
-    'trades': 14020, 
-    'baseAssetVolume': '623806.29000000', 
-    'quoteAssetVolume': '2094632.67475500'
-    }
-
-
+from src.processos.logs.log import Debug
 
 class PeriodoCandles():
     periodoUM = [] # mais recente candles preco atual
@@ -66,8 +51,8 @@ class PeriodoCandles():
             "high":valorMaximoStr, 
             "symbol":self.symbol
             }
-        self.minimoPeridoUM.append(periodo)    
-        print(self.minimoPeridoUM)
+         
+        Debug.log("periodo 1", "NEAR", "12,00")
         return valorMinimo
         
     
